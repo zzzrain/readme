@@ -5,15 +5,15 @@
 
 - 个人信息配置
 ````
-git config --global user.name '我是JOJO'
-git config --global user.email 'jojo@163.com'
+git config --global user.name 我是JOJO
+git config --global user.email jojo@163.com
 git config -l
 ````
 
 - 本机首次配置
 ````
 1、创建ssh key
-ssh-keygen -t rsa -C 'jojo@163.com'
+ssh-keygen -t rsa -C jojo@163.com
 
 2、找到.ssh目录的钥匙（win7在C盘User目录下）
 id_rsa：私钥   id_rsa_pub：公钥
@@ -42,6 +42,7 @@ git clone xxx(远程地址)
 ````
 
 ##三、常用命令
+事实上可视化工具、编辑器插件的存在，已经不常用了
 ````
 1、添加到暂存区，加文件名，.代表全部
 git add .
@@ -52,9 +53,15 @@ git add .
 
 4、上传代码  git push
 
-5、切换分支  git checkout
+5、查看状态  git status
 
-6、查看状态  git status
+6、切换分支  git checkout xxx
+
+7、合并分支  git merge xxx
+。。。
+
+8、事实上，有一个比较危险但实用的，工具/插件可能执行不了
+    git push --force
 ````
 
 ##四、图解
@@ -87,5 +94,8 @@ git add .
    上上版本 --hard HEAD^^
    。。。
    指定版本 --hard xxx
+   --hard   还原到上一次提交（清除所有改动）
+   --mixed  还原到工作区（清除commit，清除add）
+   --soft   还原到暂存区（清除commit，保留add）
    
 ````

@@ -85,9 +85,9 @@ git clone xxx(远程地址)
 
 ##五、版本管理
 ````
-1、查看日志  git log
-2、重新查看  git reflog
-3、版本回退  git reset
+1、查看最近  git log
+2、查看所有  git reflog  （很重要，能找回被覆盖的数据）
+3、版本回退  git reset   （也能穿回未来）
 4、参数，一个^一个版本
    上一版本 --hard HEAD^
    上上版本 --hard HEAD^^
@@ -98,5 +98,5 @@ git clone xxx(远程地址)
    --mixed  还原到工作区（清除commit，清除add）
    --soft   还原到暂存区（清除commit，保留add）
    
-5、只要保留本地仓库(.git)，所有记录都能找回来。
+5、只要保留本地仓库(.git)，所有commit过的记录都能找回来。
 ````

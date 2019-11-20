@@ -86,9 +86,13 @@ git clone xxx(远程地址)
 ##五、版本管理
 ````
 1、查看最近  git log
+
 2、查看所有  git reflog  （很重要，能找回被覆盖的数据）
+
 3、版本回退  git reset   （也能穿回未来）
+
 4、参数，一个^一个版本
+
    上一版本 --hard HEAD^
    上上版本 --hard HEAD^^
    。。。

@@ -74,7 +74,7 @@ git clone xxx(远程地址)
 
 <img src='https://github.com/zzzrain/images/blob/master/git/state2.jpg'><br>
 
-- git add相当于把LICENSE丢到分支上
+- git commit相当于把LICENSE丢到分支上
 
 <img src='https://github.com/zzzrain/images/blob/master/git/state3.jpg'><br>
 
